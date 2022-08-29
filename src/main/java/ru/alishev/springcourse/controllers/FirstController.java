@@ -30,13 +30,13 @@ public class FirstController {
                             @RequestParam String action,
                             Model model) {
 
-        int result = 0;
+        double result = 0;
         switch (action) {
             case "multiplication":
                 result = a * b;
                 break;
             case "division":
-                result = a / b;
+                result = a / (double) b;
                 break;
             case "addition":
                 result = a + b;
